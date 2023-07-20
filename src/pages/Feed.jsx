@@ -3,11 +3,16 @@ import React from "react";
 const Feed = () => {
   return (
     <div className="container mx-auto w-[600px]">
-        <div><img src="https://avatars.githubusercontent.com/u/108215568?v=4" alt="" /></div>
+        <div>
+            <img className="w-14 rounded-full"
+            src="https://avatars.githubusercontent.com/u/108215568?v=4" alt="" /></div>
     <div>
         <div>
             <div>
                 <strong>Murat</strong>
+                <div>
+                    <p>3hrs ago</p>
+                </div>
             </div>
         </div>
     </div>
