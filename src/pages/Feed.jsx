@@ -1,16 +1,10 @@
 import React, { useState, useEffect } from "react";
-import {
-  MoreHorizontal,
-  Heart,
-  Repeat,
-  Send,
-  MessageCircle,
-} from "react-feather";
+
 import Thread from "../components/Thread";
 import { database, DEVELOP_DB_ID, COLLECTION_ID_THREADS } from "../appWriteConfig";
 
 const Feed = () => {
-  const [threads, setThreads] = useState();
+  const [threads, setThreads] = useState([]);
   useEffect(() => {
     getThreads();
   }, []);
